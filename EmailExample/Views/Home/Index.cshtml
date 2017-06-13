@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("sendMessage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input name="fromWho" type="text" placeholder="From" />
+            <br />
+            <input name="subject" type="text" placeholder="Subject" />
+            <br />
+            <input name="message" type="text" placeholder="Message"/>             
+            <br/>
+            <input type="submit" value="Send" />
+        }
+    </div>
+</body>
+</html>
