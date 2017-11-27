@@ -37,7 +37,6 @@ namespace EmailExample.Controllers
 
             return RedirectToAction("Index");
         }
-        //TEST
 
 
         //<system.net>
